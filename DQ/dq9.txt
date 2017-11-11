@@ -1,0 +1,88 @@
+Q. What will be the output of the following code?           
+
+myLogger.setLevel(Level.INFO);  
+myAppender = new ConsoleAppender(new SimpleLayout());   
+myLogger.info("Logged since INFO=INFO");
+myLogger.debug("Logged, since DEBUG >INFO");
+1). Logged since INFO=INFO
+     Logged, since DEBUG >INFO
+2). Logged, since DEBUG >INFO
+3). Logged since INFO=INFO
+4). No output
+Solution :
+option [4] is correct
+
+Q. wait(),notify() and notifyAll() methods of ___________________ class/interface 
+1). Object
+2). Thread
+3). Runnable 
+4). Class
+Solution :
+option [2] is correct
+
+Q. Which of the following method is responsible to start a Thread?
+1). start()
+2). run()
+3). init()
+4). go()
+Solution :
+option [1] is correct
+
+
+Q. Which of the following are methods of Thread class?
+1). isAlive()
+2). notify()
+3). wait()
+4). join()
+Solution :
+option [1,4] are correct
+
+Q. Which of the given class is used to read property file?
+1). Logger
+2). Appender
+3). System
+4). PropertyConfigurator
+Solution :
+option [4] is correct
+
+Q. Which of the Appender should be used to send LoggingEvent objects to a remote 
+a log server?         
+1). SysLogAppender
+2). ConsoleAppender
+3). Telnet Appender
+4). SocketAppender
+Solution :
+option [4] is correct
+
+Q. Log4j can be configured with the help of?
+1). XML files
+2). Properties file
+3). Both a and b is true
+4). Log4j cannot be configured with external files
+Solution :
+option [3] is correct
+
+Q. Arrange the priorities in ascending order?
+A.INFO B.ERROR c.DEBUG d.FATAL e.WARN
+1). c,a,e,b,d
+2). a,b,c,d,e
+3). b,c,d,e,a
+4). c,b,d,e,a
+Solution :
+option [1] is correct
+
+Q. Which method must be defined by a class implementing the java.lang.Runnable interface?
+1). void run()
+2). public void run()
+3). public void start()
+4). void run(int priority)
+Solution :
+option [2] is correct
+
+Q. Select the appropriate ways of creating Thread.
+1). Extending Thread class
+2). Implementing Runnable interface
+3). Both of the above
+4). Only by Extending Thread class
+Solution :
+option [3] is correct

@@ -1,0 +1,262 @@
+Q. Consider the following div tag which initialize the country.
+<div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]"> 
+Which of the following is the correct way to print country name and locale using angular directive?
+1).   <ol>
+      <li ng-repeat = "countries in country">
+         {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+      </li>
+   </ol>
+2).   <ol>
+      <li ng-repeat = "country in countries">
+         {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+      </li>
+   </ol>
+3).   <ol>
+      <li ng-forEach = "country in countries">
+         {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+      </li>
+   </ol>
+4). None of the above
+Solution :
+option [2] is correct
+
+Q. Which of the following is true about $routeProvider?
+1).  $routeProvider is the key service which set the configuration of urls.
+2). $routeProvider maps Urls with the corresponding html page or ng-template.
+3). $routeProvider attaches a controller with the view.
+4). All of the above.
+Solution :
+option [4] is correct
+
+Q. _____ is the key service which set the configuration of urls, map them with the corresponding html page or ng-template, and attach a controller with the same.
+1). $route
+2). $routeProvider
+3). $Provider
+4). $http 
+Solution :
+option [2] is correct
+
+Q. Which of the following is the correct syntax of using angular  http service?
+1). // Simple GET request example:
+$http({
+  method: 'GET',
+  url: '/someUrl'
+}).then(function successCallback() {
+    // this callback will be called asynchronously
+    // when the response is available
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
+2). // Simple GET request example:
+$http(
+  method: 'GET',
+  url: '/someUrl'
+}).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  );
+3). // Simple GET request example:
+$http({
+  method= 'GET',
+  url: '/someUrl'
+}).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
+4). // Simple GET request example:
+$http({
+  method: 'GET',
+  url: '/someUrl'
+}).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+  }, function errorCallback(response) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
+Solution :
+option [4] is correct
+
+Q. Which of the following is true about ng-disabled directive?
+1).  ng-disabled directive can enable a given control.
+2). ng-disabled directive can disable a given control.
+3). Both of the above
+4). None of the above
+Solution :
+option [3] is correct
+
+Q. Consider the following code snippet
+<script>
+angular.module('myApp', []).
+controller('namesCtrl', function($scope) {
+    $scope.names = [
+        {name:'Jani',country:'Norway'},
+        {name:'Carl',country:'Sweden'},
+        {name:'Margareth',country:'England'},
+        {name:'Hege',country:'Norway'},
+        {name:'Joe',country:'Denmark'}
+        ];
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+    }
+});
+</script>
+If we want to display the name and 
+country in the tabular format
+and sort them Which of the following 
+is the correct way of doing it?
+1). 
+<div ng-app="myApp" ng-controller="namesCtrl">
+ <table border="1" width="100%">
+ <tr>
+  <th ng-click="orderByMe('name')">Name</th>
+  <th ng-click="orderByMe('country')">Country</th>
+ </tr>
+ <tr ng-repeat="x in names | orderBy">
+  <td>{{x.name}}</td>
+  <td>{{x.country}}</td>
+ </tr>
+ </table>
+</div>
+
+
+
+2). 
+<div ng-app="myApp" ng-controller="namesCtrl">
+ <table border="1" width="100%">
+ <tr>
+  <th ng-click="orderByMe('name')">Name</th>
+  <th ng-click="orderByMe('country')">Country</th>
+ </tr>
+ <tr ng-repeat="x   names | orderBy:myOrderBy">
+  <td>{{x.name}}</td>
+  <td>{{x.country}}</td>
+ </tr>
+ </table>
+</div>
+
+3). 
+<div ng-app="myApp" ng-controller="namesCtrl">
+ <table border="1" width="100%">
+ <tr>
+  <th ng-click="orderByMe('name')">Name</th>
+  <th ng-click="orderByMe('country')">Country</th>
+ </tr>
+ <tr ng-repeat="x in names | orderBy:myOrderBy">
+  <td>{{x.name}}</td>
+  <td>{{x.country}}</td>
+ </tr>
+ </table>
+</div>
+
+
+
+4). 
+<div ng-app="myApp" ng-controller="namesCtrl">
+ <table border="1" width="100%">
+ <tr>
+  <th ng-click="orderBy('name')">Name</th>
+  <th ng-click="orderBy('country')">Country</th>
+ </tr>
+ <tr ng-repeat="x in names | orderBy:myOrderBy">
+  <td>{{x.name}}</td>
+  <td>{{x.country}}</td>
+ </tr>
+ </table>
+</div>
+
+Solution :
+option [3] is correct
+
+Q. Which of the  following 
+service allows you to retrieve the
+current set of route parameters?
+1).  $routeParam
+2).  $routeService
+3).  $route
+4).  $routeParams
+Solution :
+option [4] is correct
+
+Q. Which of the following fuction we can use to create the service?
+1). run
+2). factory
+3). service
+4). config
+Solution :
+option [2,3] are correct
+
+Q. The AngularJS       _________           service makes a request to the server, and returns a response.
+1). $injector
+2). $timeout
+3). $location
+4). $http 
+Solution :
+option [4] is correct
+
+Q. Which of the following will be
+the best way of adding the data of the text box in 
+the bulleted list?
+1). 
+<script>
+var app = angular.module("myShoppingList", []); 
+app.controller("myCtrl", function($scope) {
+    $scope.products = ["Milk", "Bread", "Cheese"];
+    $scope.addItem = function () {
+        $scope.products.push($scope.addMe);
+    }    
+});
+</script>
+
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+  <input ng-model="addMe">
+  <button ng-click="addItem()">Add</button>
+</div>
+2). 
+<script>
+var app = angular.module("myShoppingList", []); 
+app.controller("myCtrl", function($scope) {
+    $scope.products = ["Milk", "Bread", "Cheese"];
+    $scope.addItem = function () {
+        $scope.products.push($scope.addMe);
+    }    
+});
+</script>
+
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+  <input ng-model="addItem">
+  <button ng-click="addItem()">Add</button>
+</div>
+3). <script>
+var app = angular.module("myShoppingList", []); 
+app.controller("myCtrl", function($scope) {
+    $scope.products = ["Milk", "Bread", "Cheese"];
+    $scope.addItem = function () {
+        $scope.products($scope.addMe);
+    }    
+});
+</script>
+
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+  <input ng-model="addMe">
+  <button ng-click="addItem()">Add</button>
+</div>
+4). None of the above
+Solution :
+option [1] is correct

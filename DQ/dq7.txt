@@ -1,0 +1,106 @@
+Q. ResultSet rs = stmt.executQuery("SELECT name, rank, serialNo FROM          employee");
+Which of the following will get the value of 'name' from the  above ResultSet rs?
+1). rs.getString(0)
+2). rs.getString(1)
+3). rs.getString("name")
+4). None of the above
+Solution :
+option [2,3] are correct
+
+Q. Which of the following methods is best suitable for executing a DML statement? 
+1). executeQuery()
+2). executeUpdate()
+3). execute()
+4). getResultSet()
+Solution :
+option [2] is correct
+
+Q. What is true about Connection Pooling?          
+1). It increase the performance system
+2). It promotes reusability
+3). Connection pool implementation not disconnect the link with the database even 
+     though client close the connection
+4). All the above
+Solution :
+option [4] is correct
+
+Q. Pick up the valid statement to execute the following sql query
+PreparedStatement pstmt = con.prepareStatement("insert into student values(?,?));
+pstmt.setString(1,"Asha");
+pstmt.setString(2,"Basha");
+1). ResutlSet rs = pstmt.executeQuery();
+2). Pstmt.executeQuery();
+3). ResultSet rs = pstmt.executeUpdate();
+4). None of the above
+Solution :
+option [4] is correct
+
+Q. Which of the following are pure java drivers ?
+1). Type 1 – JDBC-ODBC Bridge 
+2). Type 2 – Java Native API
+3). Type 3 – Java to Network Protocol
+4). Type 4 – Java to Database Protocol
+Solution :
+option [3,4] are correct
+
+Q. Which of the following are pure java drivers ?
+1). Type 1 – JDBC-ODBC Bridge 
+2). Type 2 – Java Native API
+3). Type 3 – Java to Network Protocol
+4). Type 4 – Java to Database Protocol
+Solution :
+option [3,4] are correct
+
+Q. Which of the following code snippet is most appropriate to roll back the transaction 
+when an error occurs in the transaction?                                             
+1). conn.setAutoCommit(false);
+              // perform transactions
+           conn.commit();
+           con.setAutoCommit(true);
+      conn .rollback() ;
+2). try {
+           conn.setAutoCommit(false);
+              // perform transactions
+           conn.commit();
+           con.setAutoCommit(true);
+      } catch (SQLException e) {
+     conn .rollback() ;
+    }
+3). try {
+           conn.setAutoCommit(true);
+              // perform transactions
+           conn.commit();
+           con.setAutoCommit(false);
+      } catch (SQLException e) {
+     conn .rollback() ;
+    }
+4). Transaction cannot be rolled back
+Solution :
+option [2] is correct
+
+Q. Which of the following are the interfaces in JDBC API?
+1). DriverManager
+2). PreparedStatement
+3). Connection
+4). ResultSet
+5). Statement
+Solution :
+option [2,3,4,5] are correct
+
+Q. The scenario where you want to take data from user each time differently, this data 
+you want to pass as an argument to the SQL query. Which of the following statement 
+you will use to execute such query 
+1). Statement
+2). PreparedStatement
+3). CallableStatement
+4). All the above
+Solution :
+option [2] is correct
+
+Q. Which of the given method of Properties class is used to read, key and value pair from input binary stream?
+1). load(InputStream stream)
+2). load(Reader reader)
+3). getProperty(String str)
+4). getProperty(String str,String default);
+Solution :
+option [1] is correct

@@ -1,0 +1,144 @@
+Q. Which of the following is   valid for
+ng-init directive?
+1). Initializes an AngularJS application.
+2). Initializes application data.
+3). Binds the value of HTML controls (input, select, textarea) to application data.
+4). All of the above.
+Solution :
+option [2] is correct
+
+Q. Which of the following directive
+when placed on any DOM element marks
+that element as the beginning of the $rootScope?
+1). ng-model
+2). ng-bind
+3). ng-app
+4). ng-init
+Solution :
+option [3] is correct
+
+Q. We  can think of a module as a container for the different parts of your app  like controllers, services, filters, directives, etc.
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+Q. Consider the following code snippet.
+ <div ng-app = "">
+         <p>Enter your Name: <input type = "text" ng-model = "name"></p>
+         <p>Hello <span ng-bind = "name"></span>!</p>
+      </div>
+Which of the following directive will bind the model "name" with the view?
+1). ng-app
+2). ng-bind
+3). ng-init
+4). ng-controller
+Solution :
+option [2] is correct
+
+Q. Which of the following  directive binds the value of HTML controls (input, select, textarea) to application data.
+1). ng-model
+2). ng-init
+3). ng-config
+4). ng-bind
+Solution :
+option [1] is correct
+
+Q. Which of the following is
+the correct way of including
+the contents of Welcome.html file
+in angular js page?
+1). 
+<body ng-app="">
+<div ng-include="'Welcome.html'"></div>
+</body>
+2). 
+<body ng-app="">
+<div ng-import="'Welcome.html'"></div>
+</body>
+3). 
+<body >
+<div ng-include="'Welcome.html'"></div>
+</body>
+4). 
+<body >
+<div ng-import="'Welcome.html'"></div>
+</body>
+Solution :
+option [1] is correct
+
+
+Q. Which of the following 
+attribute tells Angular to replace
+ the text content of the specified HTML element 
+ with the value of a given expression and 
+ to update the text content when the value 
+ of that expression changes?
+1). ng-model
+2). ng-bind
+3). ng-app
+4). ng-init
+Solution :
+option [2] is correct
+
+Q. Consider the following  code snippet for .
+<script>
+var app = angular.module("myShoppingList", []); 
+app.controller("myCtrl", function($scope) {
+    $scope.products = ["Milk", "Bread", "Cheese"];
+});
+</script>
+
+Which of the following is the correct 
+way of putting the myCtrl controller model
+product data in the bulleted list?
+1). 
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="products">{{products}}</li>
+  </ul>
+</div>
+
+
+2). 
+<div >
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+</div>
+
+
+3). 
+<div ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+</div>
+
+
+4). 
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+</div>
+
+
+Solution :
+option [4] is correct
+
+Q. ___ in Angular apps is the automatic synchronization of data between the model and view components.
+1). Data Filter
+2). Data Controller
+3). Data Binding
+4). Data Service
+Solution :
+option [2] is correct
+
+Q. Which of the following feature of the Angular formats the value of an expression for display to the user?
+1). Service
+2). Module
+3). Expression
+4). Filter
+Solution :
+option [4] is correct
